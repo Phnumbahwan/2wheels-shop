@@ -1,29 +1,33 @@
 import { FlatList, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { SeeMoreIcon } from "../see-more-icon";
 
 export const FeaturedCollections: React.FC<{ bikes: any[]; }> = ({
     bikes
 }) => {
     return (
-        <FlatList
-            data={bikes}
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            keyExtractor={f => f.model}
-            renderItem={({ item }) => (
-                <TouchableOpacity style={styles.featuredCard}>
-                    <ImageBackground
-                        source={item.image}
-                        style={styles.featuredImage}
-                        imageStyle={styles.imageStyle}
-                    >
-                        <View style={styles.overlay}>
-                            <Text style={styles.featuredTitle}>{item.model}</Text>
-                        </View>
-                    </ImageBackground>
-                </TouchableOpacity>
-            )}
-            contentContainerStyle={styles.listContainer}
-        />
+        <>
+            <FlatList
+                data={bikes}
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                keyExtractor={f => f.model}
+                renderItem={({ item }) => (
+                    <TouchableOpacity style={styles.featuredCard}>
+                        <ImageBackground
+                            source={item.image}
+                            style={styles.featuredImage}
+                            imageStyle={styles.imageStyle}
+                        >
+                            <View style={styles.overlay}>
+                                <Text style={styles.featuredTitle}>{item.model}</Text>
+                            </View>
+                        </ImageBackground>
+                    </TouchableOpacity>
+                )}
+                contentContainerStyle={styles.listContainer}
+                ListFooterComponent={<SeeMoreIcon />}
+            />
+        </>
     );
 }
 
