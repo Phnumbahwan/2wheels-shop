@@ -1,0 +1,352 @@
+interface brandsType {
+    name: string;
+    image: any;
+    bikes?: {
+        model: string;
+        image: any;
+        description: string;
+        specifications: {
+            engine: string;
+            power: string;
+            torque: string;
+            transmission: string;
+            suspension: string;
+            brakes: string;
+            fuelCapacity: string;
+            weight: string;
+        };
+    }[];
+}
+
+export const brands: brandsType[] = [
+    {
+        name: 'CFMoto',
+        image: require('../assets/images/cfmoto/450mt.jpg'),
+        bikes: [
+            {
+                model: 'CFMoto 450MT',
+                image: require('../assets/images/cfmoto/450mt.jpg'),
+                description: 'The CFMoto 450MT is a versatile adventure motorcycle designed for both on-road and off-road riding. It features a 449cc single-cylinder engine, comfortable ergonomics, and modern technology, making it an excellent choice for riders seeking adventure at an affordable price.',
+                specifications: {
+                    engine: '449cc, single-cylinder, liquid-cooled',
+                    power: '41 hp @ 8,500 rpm',
+                    torque: '37 Nm @ 7,000 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: Telescopic fork; Rear: Mono-shock',
+                    brakes: 'Front: Disc; Rear: Disc with ABS',
+                    fuelCapacity: '20 liters',
+                    weight: '187 kg (curb weight)',
+                },
+            },
+            {
+                model: 'CFMoto 650MT',
+                image: require('../assets/images/cfmoto/650mt.jpg'),
+                description: 'The CFMoto 650MT is a mid-range adventure motorcycle that combines performance, comfort, and advanced features. It is powered by a 649cc parallel-twin engine and is equipped with modern technology such as a TFT display, LED lighting, and multiple riding modes, making it suitable for long-distance touring and off-road adventures.',
+                specifications: {
+                    engine: '649cc, parallel-twin, liquid-cooled',
+                    power: '60 hp @ 8,750 rpm',
+                    torque: '56 Nm @ 7,000 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: Upside-down fork; Rear: Mono-shock',
+                    brakes: 'Front: Dual disc; Rear: Disc with ABS',
+                    fuelCapacity: '20 liters',
+                    weight: '205 kg (curb weight)',
+                },
+            },
+            {
+                model: 'CFMoto 700CL-X',
+                image: require('../assets/images/cfmoto/700clx.webp'),
+                description: 'The CFMoto 700CL-X is a modern retro-styled motorcycle that combines classic design elements with contemporary performance. It features a 693cc parallel-twin engine, a lightweight chassis, and advanced technology, making it a great choice for urban commuting and weekend rides.',
+                specifications: {
+                    engine: '693cc, parallel-twin, liquid-cooled',
+                    power: '75 hp @ 8,500 rpm',
+                    torque: '68 Nm @ 6,500 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: Upside-down fork; Rear: Mono-shock',
+                    brakes: 'Front: Dual disc; Rear: Disc with ABS',
+                    fuelCapacity: '12 liters',
+                    weight: '196 kg (curb weight)',
+                },
+            },
+            {
+                model: 'CFMoto 800MT',
+                image: require('../assets/images/cfmoto/800mt.webp'),
+                description: 'The CFMoto 800MT is a high-performance adventure motorcycle designed for serious riders who seek both power and comfort. It is equipped with a 799cc parallel-twin engine, advanced suspension, and a host of modern features, making it ideal for long-distance touring and challenging off-road terrain.',
+                specifications: {
+                    engine: '799cc, parallel-twin, liquid-cooled',
+                    power: '95 hp @ 8,250 rpm',
+                    torque: '77 Nm @ 6,500 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: Upside-down fork; Rear: Mono-shock',
+                    brakes: 'Front: Dual disc; Rear: Disc with ABS',
+                    fuelCapacity: '20 liters',
+                    weight: '220 kg (curb weight)',
+                },
+            }
+        ]
+    },
+    {
+        name: 'KTM',
+        image: require('../assets/images/ktm/ktm390enduro.jpeg'),
+        bikes: [
+            {
+                model: 'KTM 390 Adventure',
+                image: require('../assets/images/ktm/ktm390adventure.webp'),
+                description: 'The KTM 390 Adventure is a lightweight adventure motorcycle designed for both on-road and off-road riding. It features a 373cc single-cylinder engine, advanced suspension, and modern technology, making it an excellent choice for riders seeking adventure in a compact package.',
+                specifications: {
+                    engine: '373cc, single-cylinder, liquid-cooled',
+                    power: '44 hp @ 9,000 rpm',
+                    torque: '37 Nm @ 7,000 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: WP Apex upside-down fork; Rear: WP Apex mono-shock',
+                    brakes: 'Front: Disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '14 liters',
+                    weight: '172 kg (curb weight)',
+                },
+            },
+            {
+                model: 'KTM 390 Enduro',
+                image: require('../assets/images/ktm/ktm390enduro.jpeg'),
+                description: 'The KTM 390 Enduro is a versatile dual-sport motorcycle designed for both off-road adventures and urban commuting. It features a 373cc single-cylinder engine, long-travel suspension, and rugged styling, making it suitable for riders who want to explore a variety of terrains.',
+                specifications: {
+                    engine: '373cc, single-cylinder, liquid-cooled',
+                    power: '44 hp @ 9,000 rpm',
+                    torque: '37 Nm @ 7,000 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: WP Apex upside-down fork; Rear: WP Apex mono-shock',
+                    brakes: 'Front: Disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '14 liters',
+                    weight: '172 kg (curb weight)',
+                },
+            },
+            {
+                model: 'KTM 790 Adventure',
+                image: require('../assets/images/ktm/ktm790adventure.png'),
+                description: 'The KTM 790 Adventure is a mid-range adventure motorcycle that combines performance, comfort, and advanced features. It is powered by a 799cc parallel-twin engine and is equipped with modern technology such as ride-by-wire throttle, multiple riding modes, and advanced suspension, making it suitable for long-distance touring and off-road adventures.',
+                specifications: {
+                    engine: '799cc, parallel-twin, liquid-cooled',
+                    power: '95 hp @ 8,000 rpm',
+                    torque: '88 Nm @ 6,500 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: WP Apex upside-down fork; Rear: WP Apex mono-shock',
+                    brakes: 'Front: Dual disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '20 liters',
+                    weight: '189 kg (curb weight)',
+                },
+            },
+            {
+                model: 'KTM 890 Adventure',
+                image: require('../assets/images/ktm/ktm890adventure.jpeg'),
+                description: 'The KTM 890 Adventure is a high-performance adventure motorcycle designed for serious riders who seek both power and comfort. It is equipped with a 889cc parallel-twin engine, advanced suspension, and a host of modern features, making it ideal for long-distance touring and challenging off-road terrain.',
+                specifications: {
+                    engine: '889cc, parallel-twin, liquid-cooled',
+                    power: '105 hp @ 8,000 rpm',
+                    torque: '100 Nm @ 6,500 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: WP Apex upside-down fork; Rear: WP Apex mono-shock',
+                    brakes: 'Front: Dual disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '20 liters',
+                    weight: '202 kg (curb weight)',
+                },
+            }
+        ]
+    },
+    {
+        name: 'Yamaha',
+        image: require('../assets/images/yamaha/tenere.webp'),
+        bikes: [
+            {
+                model: 'Yamaha Tenere 700',
+                image: require('../assets/images/yamaha/tenere.webp'),
+                description: 'The Yamaha Tenere 700 is a versatile adventure motorcycle designed for both on-road and off-road riding. It features a 689cc parallel-twin engine, advanced suspension, and modern technology, making it an excellent choice for riders seeking adventure in a reliable package.',
+                specifications: {
+                    engine: '689cc, parallel-twin, liquid-cooled',
+                    power: '72 hp @ 9,000 rpm',
+                    torque: '68 Nm @ 6,500 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: KYB upside-down fork; Rear: KYB mono-shock',
+                    brakes: 'Front: Dual disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '16 liters',
+                    weight: '205 kg (curb weight)',
+                },
+            },
+            {
+                model: 'Yamaha MT-07',
+                image: require('../assets/images/yamaha/mt07.jpg'),
+                description: 'The Yamaha MT-07 is a popular naked motorcycle known for its agile handling and torquey parallel-twin engine. It is designed for urban commuting and spirited riding, offering a comfortable riding position and modern features.',
+                specifications: {
+                    engine: '689cc, parallel-twin, liquid-cooled',
+                    power: '74 hp @ 9,000 rpm',
+                    torque: '68 Nm @ 6,500 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: Telescopic fork; Rear: Mono-shock',
+                    brakes: 'Front: Dual disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '14 liters',
+                    weight: '184 kg (curb weight)',
+                },
+            },
+            {
+                model: 'Yamaha R3',
+                image: require('../assets/images/yamaha/r3.webp'),
+                description: 'The Yamaha R3 is a lightweight sport motorcycle designed for entry-level riders and those seeking a fun and nimble ride. It features a 321cc parallel-twin engine, aggressive styling, and modern technology, making it suitable for both city riding and weekend track days.',
+                specifications: {
+                    engine: '321cc, parallel-twin, liquid-cooled',
+                    power: '42 hp @ 10,750 rpm',
+                    torque: '29 Nm @ 9,000 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: Telescopic fork; Rear: Mono-shock',
+                    brakes: 'Front: Disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '14 liters',
+                    weight: '169 kg (curb weight)',
+                },
+            },
+            {
+                model: 'Yamaha XSR700',
+                image: require('../assets/images/yamaha/xsr700.webp'),
+                description: 'The Yamaha XSR700 is a retro-styled motorcycle that combines classic design elements with modern performance. It features a 689cc parallel-twin engine, a lightweight chassis, and advanced technology, making it a great choice for urban commuting and weekend rides.',
+                specifications: {
+                    engine: '689cc, parallel-twin, liquid-cooled',
+                    power: '74 hp @ 9,000 rpm',
+                    torque: '68 Nm @ 6,500 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: Telescopic fork; Rear: Mono-shock',
+                    brakes: 'Front: Dual disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '14 liters',
+                    weight: '186 kg (curb weight)',
+                },
+            }
+        ]
+    },
+    {
+        name: 'Honda',
+        image: require('../assets/images/honda/crf.jpg'),
+        bikes: [
+            {
+                model: 'Honda CRF300L',
+                image: require('../assets/images/honda/crf300l.avif'),
+                description: 'The Honda CRF300L is a lightweight dual-sport motorcycle designed for both on-road and off-road riding. It features a 286cc single-cylinder engine, long-travel suspension, and rugged styling, making it suitable for riders who want to explore a variety of terrains.',
+                specifications: {
+                    engine: '286cc, single-cylinder, liquid-cooled',
+                    power: '27 hp @ 8,500 rpm',
+                    torque: '26 Nm @ 6,500 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: Showa inverted fork; Rear: Pro-Link mono-shock',
+                    brakes: 'Front: Disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '7.8 liters',
+                    weight: '157 kg (curb weight)',
+                },
+            },
+            {
+                model: 'Honda CB500X',
+                image: require('../assets/images/honda/cb500x.jpeg'),
+                description: 'The Honda CB500X is a versatile adventure motorcycle that combines performance, comfort, and advanced features. It is powered by a 471cc parallel-twin engine and is equipped with modern technology such as LED lighting, a digital display, and ABS, making it suitable for long-distance touring and light off-road adventures.',
+                specifications: {
+                    engine: '471cc, parallel-twin, liquid-cooled',
+                    power: '47 hp @ 8,600 rpm',
+                    torque: '43 Nm @ 6,500 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: Telescopic fork; Rear: Pro-Link mono-shock',
+                    brakes: 'Front: Disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '17.1 liters',
+                    weight: '197 kg (curb weight)',
+                },
+            },
+            {
+                model: 'Honda Africa Twin',
+                image: require('../assets/images/honda/africatwin.jpg'),
+                description: 'The Honda Africa Twin is a high-performance adventure motorcycle designed for serious riders who seek both power and comfort. It is equipped with a 1084cc parallel-twin engine, advanced suspension, and a host of modern features, making it ideal for long-distance touring and challenging off-road terrain.',
+                specifications: {
+                    engine: '1084cc, parallel-twin, liquid-cooled',
+                    power: '101 hp @ 7,500 rpm',
+                    torque: '105 Nm @ 6,250 rpm',
+                    transmission: '6-speed manual or DCT',
+                    suspension: 'Front: Showa inverted fork; Rear: Pro-Link mono-shock',
+                    brakes: 'Front: Dual disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '18.8 liters',
+                    weight: '226 kg (curb weight)',
+                },
+            },
+            {
+                model: 'Honda Rebel 500',
+                image: require('../assets/images/honda/rebel500.jpg'),
+                description: 'The Honda Rebel 500 is a stylish cruiser motorcycle that combines classic design elements with modern performance. It features a 471cc parallel-twin engine, a low seat height, and advanced technology, making it a great choice for urban commuting and weekend rides.',
+                specifications: {
+                    engine: '471cc, parallel-twin, liquid-cooled',
+                    power: '45 hp @ 8,500 rpm',
+                    torque: '43 Nm @ 6,000 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: Telescopic fork; Rear: Twin shocks',
+                    brakes: 'Front: Disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '11.2 liters',
+                    weight: '191 kg (curb weight)',
+                },
+            }
+        ]
+    },
+    {
+        name: 'Kawasaki',
+        image: require('../assets/images/kawasaki/versys.jpeg'),
+        bikes: [
+            {
+                model: 'Kawasaki Versys 650',
+                image: require('../assets/images/kawasaki/versys.jpeg'),
+                description: 'The Kawasaki Versys 650 is a versatile adventure motorcycle that combines performance, comfort, and advanced features. It is powered by a 649cc parallel-twin engine and is equipped with modern technology such as ABS, traction control, and adjustable suspension, making it suitable for long-distance touring and light off-road adventures.',
+                specifications: {
+                    engine: '649cc, parallel-twin, liquid-cooled',
+                    power: '67 hp @ 8,500 rpm',
+                    torque: '64 Nm @ 7,000 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: Telescopic fork; Rear: Uni-Trak mono-shock',
+                    brakes: 'Front: Dual disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '21 liters',
+                    weight: '213 kg (curb weight)',
+                },
+            },
+            {
+                model: 'Kawasaki Ninja 400',
+                image: require('../assets/images/kawasaki/ninja400.jpg'),
+                description: 'The Kawasaki Ninja 400 is a lightweight sport motorcycle designed for entry-level riders and those seeking a fun and nimble ride. It features a 399cc parallel-twin engine, aggressive styling, and modern technology, making it suitable for both city riding and weekend track days.',
+                specifications: {
+                    engine: '399cc, parallel-twin, liquid-cooled',
+                    power: '49 hp @ 10,000 rpm',
+                    torque: '38 Nm @ 8,000 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: Telescopic fork; Rear: Uni-Trak mono-shock',
+                    brakes: 'Front: Disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '14 liters',
+                    weight: '168 kg (curb weight)',
+                },
+            },
+            {
+                model: 'Kawasaki Z650',
+                image: require('../assets/images/kawasaki/z650.jpg'),
+                description: 'The Kawasaki Z650 is a popular naked motorcycle known for its agile handling and torquey parallel-twin engine. It is designed for urban commuting and spirited riding, offering a comfortable riding position and modern features.',
+                specifications: {
+                    engine: '649cc, parallel-twin, liquid-cooled',
+                    power: '67 hp @ 8,500 rpm',
+                    torque: '64 Nm @ 7,000 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: Telescopic fork; Rear: Uni-Trak mono-shock',
+                    brakes: 'Front: Dual disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '15 liters',
+                    weight: '187 kg (curb weight)',
+                },
+            },
+            {
+                model: 'Kawasaki Vulcan S',
+                image: require('../assets/images/kawasaki/vulcans.jpg'),
+                description: 'The Kawasaki Vulcan S is a stylish cruiser motorcycle that combines classic design elements with modern performance. It features a 649cc parallel-twin engine, a low seat height, and advanced technology, making it a great choice for urban commuting and weekend rides.',
+                specifications: {
+                    engine: '649cc, parallel-twin, liquid-cooled',
+                    power: '61 hp @ 7,500 rpm',
+                    torque: '63 Nm @ 6,600 rpm',
+                    transmission: '6-speed manual',
+                    suspension: 'Front: Telescopic fork; Rear: Uni-Trak mono-shock',
+                    brakes: 'Front: Disc with ABS; Rear: Disc with ABS',
+                    fuelCapacity: '14 liters',
+                    weight: '220 kg (curb weight)',
+                },
+            }
+        ]
+    },
+];
