@@ -1,50 +1,129 @@
-# Welcome to your Expo app 👋
+# 2Wheels Shop
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A cross-platform motorcycle showroom built with Expo and React Native. This project showcases featured collections, new arrivals, and detailed brand pages using a modern component-based approach.
 
-## Get started
+## Table of Contents
 
-1. Install dependencies
+- [Getting Started](#getting-started)
+- [Code Structure](#code-structure)
+- [Features](#features)
+- [UI Image Showcase](#ui-image-showcase)
+- [Scripts](#scripts)
+- [Contributing](#contributing)
+- [License](#license)
 
-   ```bash
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- [Expo CLI](https://docs.expo.dev/workflow/expo-cli/) installed globally:  
+  ```sh
+  npm install -g expo-cli
+  ```
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/2wheels.shop.git
+   cd 2wheels.shop
+   ```
+
+2. Install dependencies:
+   ```sh
    npm install
    ```
 
-2. Start the app
-
-   ```bash
+3. Start the Expo development server:
+   ```sh
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## Code Structure
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+.
+├── .gitignore
+├── app
+│   ├── _layout.tsx          // Main layout using [Stack](app/_layout.tsx)
+│   ├── index.tsx            // Entry point; redirects to brands
+│   ├── modal.tsx            // Sample modal screen
+│   └── brands
+│       ├── index.tsx        // Brand listing screen ([BrandDetailScreen](app/brands/[brand].tsx))
+│       └── [brand].tsx      // Detailed brand view using components like [NewArrival](components/brand/new-arrival.tsx), [HeroHeader](components/brand/hero-header.tsx) etc.
+├── assets                   // Images and media files used for brands, bikes and icons
+├── components
+│   ├── brand
+│   │   ├── featured-collections.tsx
+│   │   ├── hero-header.tsx
+│   │   └── new-arrival.tsx  // New arrivals list ([NewArrival](components/brand/new-arrival.tsx))
+│   ├── ui
+│   │   ├── icon-symbol.tsx
+│   │   └── collapsible.tsx
+│   ├── themed-text.tsx
+│   ├── themed-view.tsx
+│   ├── back-button.tsx
+│   ├── external-link.tsx
+│   └── haptic-tab.tsx
+├── constants
+│   ├── brands.ts            // Bikes, brand info, specifications, pricing etc.
+│   └── theme.ts             // Theme colors and fonts
+├── hooks
+│   └── use-theme-color.ts   // Custom hook for theming
+├── scripts                  // Utilities such as project reset ([reset-project.js](scripts/reset-project.js))
+├── tsconfig.json
+├── package.json
+└── README.md
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Features
 
-## Learn more
+- **Brand Listing and Details:** Quickly navigate between brands. See the featured collection and new arrivals with detailed bike specifications in [constants/brands.ts](constants/brands.ts).
+- **Theming:** Custom theming using light/dark modes in [use-theme-color](hooks/use-theme-color.ts) and [theme.ts](constants/theme.ts).
+- **Responsive UI:** Built with React Native components such as [`ThemedView`](components/themed-view.tsx) and [`ThemedText`](components/themed-text.tsx).
+- **Animations:** Parallax scrolling in listings via [ParallaxScrollView](components/parallax-scroll-view.tsx).
+- **Haptic Feedback:** Provides soft haptic feedback on tab presses with [HapticTab](components/haptic-tab.tsx).
 
-To learn more about developing your project with Expo, look at the following resources:
+## UI Image Showcase
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+This section highlights some of the key UI components and screens of the application.
 
-## Join the community
+### Home Screen
+![Home Screen](assets/images/home-screen.png)
 
-Join our community of developers creating universal apps.
+### Brand Details
+![Brand Details Screen](assets/images/brand-details.png)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### New Arrivals
+![New Arrivals](assets/images/new-arrivals.png)
+
+*Note: Replace the image paths above with the actual paths to your images located in your project.*
+
+## Scripts
+
+- **Start Development Server:**
+  ```sh
+  npx expo start
+  ```
+- **Reset Project:**
+  ```sh
+  npm run reset-project
+  ```
+
+## Contributing
+
+Contributions are welcome. Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them.
+4. Create a pull request explaining your changes.
+
+## License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+
+---
+
+*This documentation provides an overview of the project. For more details, refer to the individual file comments and documentation generated using tools like [TypeDoc](https://typedoc.org/).*
