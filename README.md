@@ -89,14 +89,13 @@ A cross-platform motorcycle showroom built with Expo and React Native. This proj
 
 This section highlights some of the key UI components and screens of the application.
 
-### Home Screen
-![Home Screen](assets/images/home-screen.png)
+### Brands Display Screen
+<img width="425" height="936" alt="IMG_0100" src="https://github.com/user-attachments/assets/1c570bff-451c-4476-a875-346edd45f5b6" />
 
 ### Brand Details
-![Brand Details Screen](assets/images/brand-details.png)
+<img width="425" height="936" alt="IMG_0101" src="https://github.com/user-attachments/assets/82908bab-6172-4060-8e94-441815833198" />
 
-### New Arrivals
-![New Arrivals](assets/images/new-arrivals.png)
+<img width="425" height="936" alt="IMG_0102" src="https://github.com/user-attachments/assets/6148c9ca-baaf-4969-885f-d5644f584e0b" />
 
 *Note: Replace the image paths above with the actual paths to your images located in your project.*
 
