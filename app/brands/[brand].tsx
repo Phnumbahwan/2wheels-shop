@@ -1,6 +1,7 @@
 import { BackButton } from '@/components/back-button';
-import { FeaturedCollections } from '@/components/brands/featured-collections';
-import { HeroHeader } from '@/components/brands/hero-header';
+import { FeaturedCollections } from '@/components/brand/featured-collections';
+import { HeroHeader } from '@/components/brand/hero-header';
+import { NewArrival } from '@/components/brand/new-arrival';
 import { useLocalSearchParams } from "expo-router";
 import {
     ScrollView,
@@ -25,6 +26,7 @@ export default function BrandDetailScreen() {
             {/* featured collections */}
             <Text style={styles.sectionTitle}>FEATURED COLLECTIONS</Text>
             <FeaturedCollections bikes={bikes} />
+            <NewArrival bikes={bikes} />
         </ScrollView>
     );
 }

@@ -5,6 +5,7 @@ interface brandsType {
         model: string;
         image: any;
         description: string;
+        price: string; // <-- new
         specifications: {
             engine: string;
             power: string;
@@ -26,6 +27,7 @@ export const brands: brandsType[] = [
             {
                 model: 'CFMoto 450MT',
                 image: require('../assets/images/cfmoto/450mt.jpg'),
+                price: '$5,499', // <-- new
                 description: 'The CFMoto 450MT is a versatile adventure motorcycle designed for both on-road and off-road riding. It features a 449cc single-cylinder engine, comfortable ergonomics, and modern technology, making it an excellent choice for riders seeking adventure at an affordable price.',
                 specifications: {
                     engine: '449cc, single-cylinder, liquid-cooled',
@@ -41,6 +43,7 @@ export const brands: brandsType[] = [
             {
                 model: 'CFMoto 650MT',
                 image: require('../assets/images/cfmoto/650mt.jpg'),
+                price: '$7,499', // <-- new
                 description: 'The CFMoto 650MT is a mid-range adventure motorcycle that combines performance, comfort, and advanced features. It is powered by a 649cc parallel-twin engine and is equipped with modern technology such as a TFT display, LED lighting, and multiple riding modes, making it suitable for long-distance touring and off-road adventures.',
                 specifications: {
                     engine: '649cc, parallel-twin, liquid-cooled',
@@ -56,6 +59,7 @@ export const brands: brandsType[] = [
             {
                 model: 'CFMoto 700CL-X',
                 image: require('../assets/images/cfmoto/700clx.webp'),
+                price: '$8,999', // <-- new
                 description: 'The CFMoto 700CL-X is a modern retro-styled motorcycle that combines classic design elements with contemporary performance. It features a 693cc parallel-twin engine, a lightweight chassis, and advanced technology, making it a great choice for urban commuting and weekend rides.',
                 specifications: {
                     engine: '693cc, parallel-twin, liquid-cooled',
@@ -71,6 +75,7 @@ export const brands: brandsType[] = [
             {
                 model: 'CFMoto 800MT',
                 image: require('../assets/images/cfmoto/800mt.webp'),
+                price: '$10,499', // <-- new
                 description: 'The CFMoto 800MT is a high-performance adventure motorcycle designed for serious riders who seek both power and comfort. It is equipped with a 799cc parallel-twin engine, advanced suspension, and a host of modern features, making it ideal for long-distance touring and challenging off-road terrain.',
                 specifications: {
                     engine: '799cc, parallel-twin, liquid-cooled',
@@ -92,6 +97,7 @@ export const brands: brandsType[] = [
             {
                 model: 'KTM 390 Adventure',
                 image: require('../assets/images/ktm/ktm390adventure.webp'),
+                price: '$6,999', // <-- new
                 description: 'The KTM 390 Adventure is a lightweight adventure motorcycle designed for both on-road and off-road riding. It features a 373cc single-cylinder engine, advanced suspension, and modern technology, making it an excellent choice for riders seeking adventure in a compact package.',
                 specifications: {
                     engine: '373cc, single-cylinder, liquid-cooled',
@@ -107,6 +113,7 @@ export const brands: brandsType[] = [
             {
                 model: 'KTM 390 Enduro',
                 image: require('../assets/images/ktm/ktm390enduro.jpeg'),
+                price: '$6,499', // <-- new
                 description: 'The KTM 390 Enduro is a versatile dual-sport motorcycle designed for both off-road adventures and urban commuting. It features a 373cc single-cylinder engine, long-travel suspension, and rugged styling, making it suitable for riders who want to explore a variety of terrains.',
                 specifications: {
                     engine: '373cc, single-cylinder, liquid-cooled',
@@ -122,6 +129,7 @@ export const brands: brandsType[] = [
             {
                 model: 'KTM 790 Adventure',
                 image: require('../assets/images/ktm/ktm790adventure.png'),
+                price: '$9,499', // <-- new
                 description: 'The KTM 790 Adventure is a mid-range adventure motorcycle that combines performance, comfort, and advanced features. It is powered by a 799cc parallel-twin engine and is equipped with modern technology such as ride-by-wire throttle, multiple riding modes, and advanced suspension, making it suitable for long-distance touring and off-road adventures.',
                 specifications: {
                     engine: '799cc, parallel-twin, liquid-cooled',
@@ -137,6 +145,7 @@ export const brands: brandsType[] = [
             {
                 model: 'KTM 890 Adventure',
                 image: require('../assets/images/ktm/ktm890adventure.jpeg'),
+                price: '$11,499', // <-- new
                 description: 'The KTM 890 Adventure is a high-performance adventure motorcycle designed for serious riders who seek both power and comfort. It is equipped with a 889cc parallel-twin engine, advanced suspension, and a host of modern features, making it ideal for long-distance touring and challenging off-road terrain.',
                 specifications: {
                     engine: '889cc, parallel-twin, liquid-cooled',
@@ -158,6 +167,7 @@ export const brands: brandsType[] = [
             {
                 model: 'Yamaha Tenere 700',
                 image: require('../assets/images/yamaha/tenere.webp'),
+                price: '$9,599', // <-- new
                 description: 'The Yamaha Tenere 700 is a versatile adventure motorcycle designed for both on-road and off-road riding. It features a 689cc parallel-twin engine, advanced suspension, and modern technology, making it an excellent choice for riders seeking adventure in a reliable package.',
                 specifications: {
                     engine: '689cc, parallel-twin, liquid-cooled',
@@ -173,6 +183,7 @@ export const brands: brandsType[] = [
             {
                 model: 'Yamaha MT-07',
                 image: require('../assets/images/yamaha/mt07.jpg'),
+                price: '$7,699', // <-- new
                 description: 'The Yamaha MT-07 is a popular naked motorcycle known for its agile handling and torquey parallel-twin engine. It is designed for urban commuting and spirited riding, offering a comfortable riding position and modern features.',
                 specifications: {
                     engine: '689cc, parallel-twin, liquid-cooled',
@@ -188,6 +199,7 @@ export const brands: brandsType[] = [
             {
                 model: 'Yamaha R3',
                 image: require('../assets/images/yamaha/r3.webp'),
+                price: '$5,299', // <-- new
                 description: 'The Yamaha R3 is a lightweight sport motorcycle designed for entry-level riders and those seeking a fun and nimble ride. It features a 321cc parallel-twin engine, aggressive styling, and modern technology, making it suitable for both city riding and weekend track days.',
                 specifications: {
                     engine: '321cc, parallel-twin, liquid-cooled',
@@ -203,6 +215,7 @@ export const brands: brandsType[] = [
             {
                 model: 'Yamaha XSR700',
                 image: require('../assets/images/yamaha/xsr700.webp'),
+                price: '$8,499', // <-- new
                 description: 'The Yamaha XSR700 is a retro-styled motorcycle that combines classic design elements with modern performance. It features a 689cc parallel-twin engine, a lightweight chassis, and advanced technology, making it a great choice for urban commuting and weekend rides.',
                 specifications: {
                     engine: '689cc, parallel-twin, liquid-cooled',
@@ -224,6 +237,7 @@ export const brands: brandsType[] = [
             {
                 model: 'Honda CRF300L',
                 image: require('../assets/images/honda/crf300l.avif'),
+                price: '$4,999', // <-- new
                 description: 'The Honda CRF300L is a lightweight dual-sport motorcycle designed for both on-road and off-road riding. It features a 286cc single-cylinder engine, long-travel suspension, and rugged styling, making it suitable for riders who want to explore a variety of terrains.',
                 specifications: {
                     engine: '286cc, single-cylinder, liquid-cooled',
@@ -239,6 +253,7 @@ export const brands: brandsType[] = [
             {
                 model: 'Honda CB500X',
                 image: require('../assets/images/honda/cb500x.jpeg'),
+                price: '$6,999', // <-- new
                 description: 'The Honda CB500X is a versatile adventure motorcycle that combines performance, comfort, and advanced features. It is powered by a 471cc parallel-twin engine and is equipped with modern technology such as LED lighting, a digital display, and ABS, making it suitable for long-distance touring and light off-road adventures.',
                 specifications: {
                     engine: '471cc, parallel-twin, liquid-cooled',
@@ -254,6 +269,7 @@ export const brands: brandsType[] = [
             {
                 model: 'Honda Africa Twin',
                 image: require('../assets/images/honda/africatwin.jpg'),
+                price: '$14,399', // <-- new
                 description: 'The Honda Africa Twin is a high-performance adventure motorcycle designed for serious riders who seek both power and comfort. It is equipped with a 1084cc parallel-twin engine, advanced suspension, and a host of modern features, making it ideal for long-distance touring and challenging off-road terrain.',
                 specifications: {
                     engine: '1084cc, parallel-twin, liquid-cooled',
@@ -269,6 +285,7 @@ export const brands: brandsType[] = [
             {
                 model: 'Honda Rebel 500',
                 image: require('../assets/images/honda/rebel500.jpg'),
+                price: '$6,499', // <-- new
                 description: 'The Honda Rebel 500 is a stylish cruiser motorcycle that combines classic design elements with modern performance. It features a 471cc parallel-twin engine, a low seat height, and advanced technology, making it a great choice for urban commuting and weekend rides.',
                 specifications: {
                     engine: '471cc, parallel-twin, liquid-cooled',
@@ -290,6 +307,7 @@ export const brands: brandsType[] = [
             {
                 model: 'Kawasaki Versys 650',
                 image: require('../assets/images/kawasaki/versys.jpeg'),
+                price: '$7,999', // <-- new
                 description: 'The Kawasaki Versys 650 is a versatile adventure motorcycle that combines performance, comfort, and advanced features. It is powered by a 649cc parallel-twin engine and is equipped with modern technology such as ABS, traction control, and adjustable suspension, making it suitable for long-distance touring and light off-road adventures.',
                 specifications: {
                     engine: '649cc, parallel-twin, liquid-cooled',
@@ -305,6 +323,7 @@ export const brands: brandsType[] = [
             {
                 model: 'Kawasaki Ninja 400',
                 image: require('../assets/images/kawasaki/ninja400.jpg'),
+                price: '$5,899', // <-- new
                 description: 'The Kawasaki Ninja 400 is a lightweight sport motorcycle designed for entry-level riders and those seeking a fun and nimble ride. It features a 399cc parallel-twin engine, aggressive styling, and modern technology, making it suitable for both city riding and weekend track days.',
                 specifications: {
                     engine: '399cc, parallel-twin, liquid-cooled',
@@ -320,6 +339,7 @@ export const brands: brandsType[] = [
             {
                 model: 'Kawasaki Z650',
                 image: require('../assets/images/kawasaki/z650.jpg'),
+                price: '$7,499', // <-- new
                 description: 'The Kawasaki Z650 is a popular naked motorcycle known for its agile handling and torquey parallel-twin engine. It is designed for urban commuting and spirited riding, offering a comfortable riding position and modern features.',
                 specifications: {
                     engine: '649cc, parallel-twin, liquid-cooled',
@@ -335,6 +355,7 @@ export const brands: brandsType[] = [
             {
                 model: 'Kawasaki Vulcan S',
                 image: require('../assets/images/kawasaki/vulcans.jpg'),
+                price: '$7,999', // <-- new
                 description: 'The Kawasaki Vulcan S is a stylish cruiser motorcycle that combines classic design elements with modern performance. It features a 649cc parallel-twin engine, a low seat height, and advanced technology, making it a great choice for urban commuting and weekend rides.',
                 specifications: {
                     engine: '649cc, parallel-twin, liquid-cooled',

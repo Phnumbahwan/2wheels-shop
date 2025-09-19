@@ -1,9 +1,11 @@
 import { FlatList, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { SeeMoreIcon } from "../see-more-icon";
 
-export const FeaturedCollections: React.FC<{ bikes: any[] }> = ({ bikes }) => {
+export const FeaturedCollections: React.FC<{ bikes: any[]; }> = ({
+    bikes
+}) => {
     return (
-        <View>
+        <>
             <FlatList
                 data={bikes}
                 horizontal
@@ -20,56 +22,46 @@ export const FeaturedCollections: React.FC<{ bikes: any[] }> = ({ bikes }) => {
                                 <Text style={styles.featuredTitle}>{item.model}</Text>
                             </View>
                         </ImageBackground>
-                        <Text style={styles.priceText}>{item.price}</Text>
                     </TouchableOpacity>
                 )}
                 contentContainerStyle={styles.listContainer}
                 ListFooterComponent={<SeeMoreIcon />}
             />
-        </View>
+        </>
     );
 }
 
 const styles = StyleSheet.create({
-    // ...existing styles...
+    imageStyle: {
+        resizeMode: "cover"
+    },
     featuredCard: {
         marginRight: 12,
         width: 140,
         height: 180,
         borderRadius: 10,
-        overflow: "hidden",
+        overflow: "hidden"
     },
     featuredImage: {
         flex: 1,
-        justifyContent: "flex-end",
-    },
-    imageStyle: {
-        resizeMode: "cover",
-        borderRadius: 10,
+        justifyContent: "flex-end"
     },
     overlay: {
         ...StyleSheet.absoluteFillObject,
-        backgroundColor: "rgba(0,0,0,0.3)",
+        backgroundColor: "rgba(0,0,0,0.4)",
         justifyContent: "center",
-        alignItems: "center",
+        alignItems: "center"
     },
     featuredTitle: {
         color: "#fff",
         position: "absolute",
         bottom: 10,
         left: 10,
-        fontWeight: "bold",
-    },
-    priceText: {
-        marginTop: 4,
-        fontSize: 12,
-        fontWeight: "600",
-        color: "#333",
-        textAlign: "center",
+        fontWeight: "bold"
     },
     listContainer: {
         paddingLeft: 16,
         paddingRight: 8,
-        paddingBottom: 16,
-    },
+        paddingBottom: 16
+    }
 });
